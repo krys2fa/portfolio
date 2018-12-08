@@ -10,6 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "10.5.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
