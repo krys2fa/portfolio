@@ -10,18 +10,22 @@
 <body>
   <div class="ui container">
     <!-- Navigation Menu -->
-    <div class="ui four item inverted orange menu">
+    <div class="ui four item inverted blue menu">
       <div class="header item">
-        <i class="money bill alternate outline icon"></i>
+        <!-- <i class="money bill alternate outline icon"></i> -->
+          <i class="icon settings"></i>
         Portfolio
       </div>
       <a class="item" href="/">
+        <i class="icon address book"></i>
         Who Am I
       </a>
       <a class="item" href="/projects">
+        <i class="icon folder open"></i>
         Projects
       </a>
       <a class="item" href="/contact">
+        <i class="icon comments"></i>
         Get In Touch
       </a>
     </div>
@@ -29,7 +33,8 @@
 
     <!-- Error Template -->
     <script id="error-template" type="text/x-handlebars-template">
-        <div class="ui {{color}} inverted segment" style="height:250px;">
+        <!-- <div class="ui {{color}} inverted segment" style="height:250px;"> -->
+        <div class="ui blue inverted segment" style="height:250px;">
         <br>
         <h2 class="ui center aligned icon header">
             <i class="exclamation triangle icon"></i>
@@ -48,16 +53,164 @@
         <hr>
     </script>
     
-    <!-- Exchange Conversion Template -->
+    <!-- Projects Template -->
     <script id="projects-template" type="text/x-handlebars-template">
         <h1 class="ui header">Projects</h1>
         <hr>
+
+        <div class="ui three column divided grid">
+          <div class="row">
+            <div class="column">
+              <div class="ui link cards">
+                <div class="card">
+
+                  <div class="image">
+                    <img src="">
+                  </div>
+
+                  <div class="content">
+
+                    <div class="header">Portfolio</div>
+                    <div class="meta"><a href="krys2fa.herokuapp.com">Visit Site</a></div>
+
+                    <div class="description"> 
+                      This is a website to show off some of my projects.
+                    </div>
+
+                  </div>
+
+                  <div class="extra content">
+
+                    <!-- <span class="right floated">
+                      Joined in 2013
+                    </span> -->
+
+                    <span>
+                      <i class="settings icon"></i>
+                       Nodejs, Semantic-UI
+                    </span>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+                <div class="ui link cards">
+                  <div class="card">
+  
+                    <div class="image">
+                      <img src="">
+                    </div>
+  
+                    <div class="content">
+  
+                      <div class="header">Foody</div>
+                      <div class="meta"><a href="foody.herokuapp.com">Visit Site</a></div>
+  
+                      <div class="description"> 
+                        This is a web application to enable people order food from a number of restaurants.
+                      </div>
+  
+                    </div>
+  
+                    <div class="extra content">
+  
+                      <span>
+                        <i class="settings icon"></i>
+                         Laravel, Bootstrap
+                      </span>
+  
+                    </div>
+  
+                  </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="ui link cards">
+                  <div class="card">
+  
+                    <div class="image">
+                      <img src="">
+                    </div>
+  
+                    <div class="content">
+  
+                      <div class="header">Edubox</div>
+                      <div class="meta"><a href="edubox.herokuapp.com">Visit Site</a></div>
+  
+                      <div class="description"> 
+                        This is a web application to enable people request for documents from educational institutions.
+                      </div>
+  
+                    </div>
+  
+                    <div class="extra content">
+  
+                      <span>
+                        <i class="settings icon"></i>
+                         Ruby on Rails
+                      </span>
+  
+                    </div>
+  
+                  </div>
+                </div>
+            </div>
+
+          </div>
+
+
+          <!-- <div class="row">
+              <div class="column">
+                <p>Hellow world</p>
+              </div>
+  
+              <div class="column">
+                <p>Hellow world</p>
+              </div>
+  
+              <div class="column">
+                <p>heollow world</p>
+              </div> 
+            </div> -->
+  
+
+        </div>
+
     </script>
     
-    <!-- Historical Rates Template -->
+    <!-- Contact Template -->
     <script id="contact-template" type="text/x-handlebars-template">
         <h1 class="ui header">Get In Touch</h1>
         <hr>
+          <button class="ui linkedin button" onclick="window.location.href= 'https://www.linkedin.com/in/christopher-amanor-81a7b93b/'">
+            <i class="linkedin icon"></i>
+            LinkedIn
+          </button>
+
+          <button class="ui github button" onclick="window.location.href= 'https://github.com/krys2fa'">
+            <i class="github icon"></i>
+            Github
+        </button>
+
+          <button class="ui twitter button" onclick="window.location.href= 'https://twitter.com/krys2fa'">
+              <i class="twitter icon"></i>
+              Twitter
+          </button>
+
+          <button class="ui instagram button" onclick="window.location.href='http://instagram.com/krys2fa'">
+            <i class="instagram icon"></i>
+            Instagram
+          </button>
+
+          <button class="ui facebook button" onclick="window.location.href='https://web.facebook.com/christopher.amanor/about'">
+            <i class="facebook icon"></i>
+            Facebook
+          </button>
+        
     </script>
 
 

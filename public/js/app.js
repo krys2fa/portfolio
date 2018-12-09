@@ -60,4 +60,5 @@ window.addEventListener('load', () => {
         const path = href.substr(href.lastIndexOf('/'));
         router.navigateTo(path);
     });
+    
   });
