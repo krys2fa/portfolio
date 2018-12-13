@@ -1,169 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="scripts/semantic-ui-css/semantic.min.css">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scripts/semantic-ui-css/semantic.min.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
-  <div class="ui container">
-    <!-- Navigation Menu -->
-    <div class="ui four item inverted blue menu">
-      <div class="header item">
-        <!-- <i class="money bill alternate outline icon"></i> -->
-          <i class="icon settings"></i>
-        Portfolio
-      </div>
-      <a class="item" href="/">
-        <i class="icon address book"></i>
-        Who Am I
-      </a>
-      <a class="item" href="/projects">
-        <i class="icon folder open"></i>
-        Projects
-      </a>
-      <a class="item" href="/contact">
-        <i class="icon comments"></i>
-        Get In Touch
-      </a>
-    </div>
-
-
-    <!-- Error Template -->
-    <script id="error-template" type="text/x-handlebars-template">
-        <!-- <div class="ui {{color}} inverted segment" style="height:250px;"> -->
-        <div class="ui blue inverted segment" style="height:250px;">
-        <br>
-        <h2 class="ui center aligned icon header">
-            <i class="exclamation triangle icon"></i>
-            <div class="content">
-            {{title}}
-            <div class="sub header">{{message}}</div>
+    <div class="ui container">
+        <!-- Navigation Menu -->
+        <div class="ui four item inverted blue menu">
+            <div class="header item">
+                <!-- <i class="money bill alternate outline icon"></i> -->
+                <i class="icon settings"></i> Portfolio
             </div>
-        </h2>
+            <a class="item" href="/">
+                <i class="icon address book"></i> Who Am I
+            </a>
+            <a class="item" href="/projects">
+                <i class="icon folder open"></i> Projects
+            </a>
+            <a class="item" href="/contact">
+                <i class="icon comments"></i> Get In Touch
+            </a>
         </div>
-    </script>
 
 
-    <!-- Who Am I Template -->
-    <script id="about-template" type="text/x-handlebars-template">
-        <h1 class="ui header">Who Am I</h1>
-        <hr>
-    </script>
-    
-    <!-- Projects Template -->
-    <script id="projects-template" type="text/x-handlebars-template">
-        <h1 class="ui header">Projects</h1>
-        <hr>
-
-        <div class="ui three column divided grid">
-          <div class="row">
-            <div class="column">
-              <div class="ui link cards">
-                <div class="card">
-
-                  <div class="image">
-                    <img src="">
-                  </div>
-
-                  <div class="content">
-
-                    <div class="header">Portfolio</div>
-                    <div class="meta"><a href="/">Visit Site</a></div>
-
-                    <div class="description"> 
-                      This is a website to show off some of my projects.
+        <!-- Error Template -->
+        <script id="error-template" type="text/x-handlebars-template">
+            <!-- <div class="ui {{color}} inverted segment" style="height:250px;"> -->
+            <div class="ui blue inverted segment" style="height:250px;">
+                <br>
+                <h2 class="ui center aligned icon header">
+                    <i class="exclamation triangle icon"></i>
+                    <div class="content">
+                        {{title}}
+                        <div class="sub header">{{message}}</div>
                     </div>
+                </h2>
+            </div>
+        </script>
 
-                  </div>
 
-                  <div class="extra content">
+        <!-- Who Am I Template -->
+        <script id="about-template" type="text/x-handlebars-template">
+            <h1 class="ui header">Who Am I</h1>
+            <hr>
 
-                    <!-- <span class="right floated">
+            <div class="container">
+
+                <div class="row">
+                    <div class="ui items">
+                        <div class="item">
+                            <a class="ui small image">
+                                <img src="/images/camanor.jpg">
+                            </a>
+                            <div class="content">
+                                <a class="header">Christopher Amanor</a>
+                                <div class="description">
+                                    <p>An innovative software developer offering four years of experience in engineering well-researched and cost-effective solutions.</p>
+                                    <p>Technical skill set includes:</p>
+                                    <ul>
+                                        <li>programming languages such as PHP, Ruby and Javascript.</li>
+                                        <li>frameworks such as Codeigniter, Laravel, Ruby on Rails, Nodejs, Bootstrap, JQuery and Semantic-UI.</li>
+                                        <li>distributed version control systems such as Git.</li>
+                                        <li>Linux (Ubuntu/CentOs) server administration.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </script>
+
+        <!-- Projects Template -->
+        <script id="projects-template" type="text/x-handlebars-template">
+            <h1 class="ui header">Projects</h1>
+            <hr>
+
+            <div class="ui three column divided grid">
+                <div class="row">
+                    <div class="column">
+                        <div class="ui link cards">
+                            <div class="card">
+
+                                <div class="image">
+                                    <img src="/images/portfolio.png">
+                                </div>
+
+                                <div class="content">
+
+                                    <div class="header">Portfolio</div>
+                                    <div class="meta"><a href="/">Visit Site</a></div>
+
+                                    <div class="description">
+                                        This is a website to show off some of my projects.
+                                    </div>
+
+                                </div>
+
+                                <div class="extra content">
+
+                                    <!-- <span class="right floated">
                       Joined in 2013
                     </span> -->
 
-                    <span>
+                                    <span>
                       <i class="settings icon"></i>
                        Nodejs, Semantic-UI
                     </span>
 
-                  </div>
+                                </div>
 
-                </div>
-              </div>
-            </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="column">
-                <div class="ui link cards">
-                  <div class="card">
-  
-                    <div class="image">
-                      <img src="">
-                    </div>
-  
-                    <div class="content">
-  
-                      <div class="header">Fuudy</div>
-                      <div class="meta"><a href="https://fuudy.herokuapp.com" target="_blank">Visit Site</a></div>
-  
-                      <div class="description"> 
-                        This is a web application to enable people order food from a number of restaurants.
-                      </div>
-  
-                    </div>
-  
-                    <div class="extra content">
-  
-                      <span>
+                    <div class="column">
+                        <div class="ui link cards">
+                            <div class="card">
+
+                                <div class="image">
+                                    <img src="">
+                                </div>
+
+                                <div class="content">
+
+                                    <div class="header">Fuudy</div>
+                                    <div class="meta"><a href="https://fuudy.herokuapp.com" target="_blank">Visit Site</a></div>
+
+                                    <div class="description">
+                                        This is a web application to enable people order food from a number of restaurants.
+                                    </div>
+
+                                </div>
+
+                                <div class="extra content">
+
+                                    <span>
                         <i class="settings icon"></i>
                          Laravel, Bootstrap
                       </span>
-  
-                    </div>
-  
-                  </div>
-                </div>
-            </div>
 
-            <div class="column">
-                <div class="ui link cards">
-                  <div class="card">
-  
-                    <div class="image">
-                      <img src="/images/edubox.png">
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-  
-                    <div class="content">
-  
-                      <div class="header">Edubox</div>
-                      <div class="meta"><a href="https://eduboxgh.herokuapp.com" target="_blank">Visit Site</a></div>
-  
-                      <div class="description"> 
-                        This is a web application to enable people request for documents from educational institutions.
-                      </div>
-  
-                    </div>
-  
-                    <div class="extra content">
-  
-                      <span>
+
+                    <div class="column">
+                        <div class="ui link cards">
+                            <div class="card">
+
+                                <div class="image">
+                                    <img src="/images/edubox.png">
+                                </div>
+
+                                <div class="content">
+
+                                    <div class="header">Edubox</div>
+                                    <div class="meta"><a href="https://eduboxgh.herokuapp.com" target="_blank">Visit Site</a></div>
+
+                                    <div class="description">
+                                        This is a web application to enable people request for documents from educational institutions.
+                                    </div>
+
+                                </div>
+
+                                <div class="extra content">
+
+                                    <span>
                         <i class="settings icon"></i>
                          Ruby on Rails, Semantic-UI
                       </span>
-  
+
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-  
-                  </div>
+
                 </div>
-            </div>
-
-          </div>
 
 
-          <!-- <div class="row">
+                <!-- <div class="row">
               <div class="column">
                 <p>Hellow world</p>
               </div>
@@ -176,55 +202,56 @@
                 <p>heollow world</p>
               </div> 
             </div> -->
-  
 
-        </div>
 
-    </script>
-    
-    <!-- Contact Template -->
-    <script id="contact-template" type="text/x-handlebars-template">
-        <h1 class="ui header">Get In Touch</h1>
-        <hr>
-          <button class="ui linkedin button" onclick="window.location.href= 'https://www.linkedin.com/in/christopher-amanor-81a7b93b/'">
+            </div>
+
+        </script>
+
+        <!-- Contact Template -->
+        <script id="contact-template" type="text/x-handlebars-template">
+            <h1 class="ui header">Get In Touch</h1>
+            <hr>
+            <button class="ui linkedin button" onclick="window.location.href= 'https://www.linkedin.com/in/christopher-amanor-81a7b93b/'">
             <i class="linkedin icon"></i>
             LinkedIn
           </button>
 
-          <button class="ui github button" onclick="window.location.href= 'https://github.com/krys2fa'">
+            <button class="ui github button" onclick="window.location.href= 'https://github.com/krys2fa'">
             <i class="github icon"></i>
             Github
         </button>
 
-          <button class="ui twitter button" onclick="window.location.href= 'https://twitter.com/krys2fa'">
+            <button class="ui twitter button" onclick="window.location.href= 'https://twitter.com/krys2fa'">
               <i class="twitter icon"></i>
               Twitter
           </button>
 
-          <button class="ui instagram button" onclick="window.location.href='http://instagram.com/krys2fa'">
+            <button class="ui instagram button" onclick="window.location.href='http://instagram.com/krys2fa'">
             <i class="instagram icon"></i>
             Instagram
           </button>
 
-          <button class="ui facebook button" onclick="window.location.href='https://web.facebook.com/christopher.amanor/about'">
+            <button class="ui facebook button" onclick="window.location.href='https://web.facebook.com/christopher.amanor/about'">
             <i class="facebook icon"></i>
             Facebook
           </button>
-        
-    </script>
+
+        </script>
 
 
 
-    <!-- Application Root -->
-    <div id="app"></div>
-  </div>
+        <!-- Application Root -->
+        <div id="app"></div>
+    </div>
 
-  <!-- JS Library Dependencies -->
-  <script src="scripts/jquery/dist/jquery.min.js"></script>
-  <script src="scripts/semantic-ui-css/semantic.min.js"></script>
-  <script src="scripts/axios/dist/axios.min.js"></script>
-  <script src="scripts/handlebars/dist/handlebars.min.js"></script>
-  <script src="scripts/vanilla-router/dist/vanilla-router.min.js"></script>
-  <script src="js/app.js"></script>
+    <!-- JS Library Dependencies -->
+    <script src="scripts/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/semantic-ui-css/semantic.min.js"></script>
+    <script src="scripts/axios/dist/axios.min.js"></script>
+    <script src="scripts/handlebars/dist/handlebars.min.js"></script>
+    <script src="scripts/vanilla-router/dist/vanilla-router.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
