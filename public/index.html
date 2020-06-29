@@ -11,76 +11,339 @@
 </head>
 
 <body>
-    <div class="ui container">
-        <!-- Navigation Menu -->
-        <div class="ui four item inverted blue menu">
-            <div class="header item">
-                <!-- <i class="money bill alternate outline icon"></i> -->
-                <i class="icon settings"></i> Portfolio
+  <div class="ui container">
+
+    <div class="ui four item inverted menu">
+
+      <div class="header item">
+          <i class="icon settings"></i> Portfolio
+      </div>
+
+      <a class="item" href="/"><i class="icon address book"></i> Who Am I</a>
+      <a class="item" href="/projects">
+        <i class="icon folder open"></i> Projects
+      </a>
+      <a class="item" href="/contact"><i class="icon comments"></i> Get In Touch
+      </a>
+    </div>
+
+
+    <!-- Error Template -->
+    <script id="error-template" type="text/x-handlebars-template">
+      <!-- <div class="ui {{color}} inverted segment" style="height:250px;"> -->
+      <div class="ui blue inverted segment" style="height:250px;">
+        <br>
+        <h2 class="ui center aligned icon header">
+          <i class="exclamation triangle icon"></i>
+
+          <div class="content">{{title}}
+            <div class="sub header">{{message}}</div>
+          </div>
+        </h2>
+      </div>
+    </script>
+
+
+    <!-- Who Am I Template -->
+    <script id="about-template" type="text/x-handlebars-template">
+        <!-- <h1 class="ui header">Who Am I</h1> -->
+        <!-- <hr> -->
+
+        <div class="container">
+
+          <div class="ui vertically divided grid">
+            <div class="one column row">
+              <div class="column">
+                <img class="my-photo" src="/images/camanor2.png">
+                <h1 class="header">Christopher Amanor</h1>
+                <h5>REMOTE FULL-STACK WEB DEVELOPER</h5>
+
+                <a class="ui black button intro-a" href="#">
+                  <i class="icon mobile alternate"></i>
+                  Hire Me
+                </a>
+
+                <a class="ui black button" href="#">
+                  <i class="icon clipboard"></i>
+                  Resume
+                </a>
+              </div>
+
+              <div class="column">
+
+                <h2>About</h2>
+                <div class="description">
+                  <p>An innovative software developer offering four years of experience in engineering well-researched
+                    and cost-effective solutions.</p>
+                  <p>Technical skill set includes:</p>
+
+                  <ul>
+                    <li>programming languages such as PHP, Ruby and Javascript.</li>
+                    <li>frameworks such as Codeigniter, Laravel, Ruby on Rails, Nodejs, Bootstrap, JQuery and
+                      Semantic-UI.</li>
+                    <li>distributed version control systems such as Git.</li>
+                    <li>Linux (Ubuntu/CentOs) server administration.</li>
+                  </ul>
+                </div>
+
+              </div>
+
+
             </div>
-            <a class="item" href="/">
-                <i class="icon address book"></i> Who Am I
-            </a>
-            <a class="item" href="/projects">
-                <i class="icon folder open"></i> Projects
-            </a>
-            <a class="item" href="/contact">
-                <i class="icon comments"></i> Get In Touch
-            </a>
-        </div>
+            <!-- Work Experience -->
+            <div class="one column row">
+              <h2>Work Experience</h2>
+              <div class="column">
 
 
-        <!-- Error Template -->
-        <script id="error-template" type="text/x-handlebars-template">
-            <!-- <div class="ui {{color}} inverted segment" style="height:250px;"> -->
-            <div class="ui blue inverted segment" style="height:250px;">
-                <br>
-                <h2 class="ui center aligned icon header">
-                    <i class="exclamation triangle icon"></i>
-                    <div class="content">
-                        {{title}}
-                        <div class="sub header">{{message}}</div>
-                    </div>
-                </h2>
+              </div>
             </div>
-        </script>
+            <!-- End of Work Experience -->
+
+            <!-- Projects -->
+
+            <h2>Projects</h2>
+            <div class="two column row">
+
+              <div class="column">
+                <h3>Healthizone</h3>
+                <img src="/images/healthizone.png" alt="healthizone">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+                <img src="https://img.icons8.com/color/48/000000/css3.png" />
+
+                <p>
+                  <a class="ui black button intro-a" href="#">
+                    <i class="film icon"></i>
+                    View Demo
+                  </a>
+
+                  <a class="ui black button" href="#">
+                    <i class="code icon"></i> View Code
+                  </a>
+                </p>
+              </div>
+
+              <div class="column">
+                <h3>Clone of Newsweek Website</h3>
+                <img src="/images/newsweek-clone.png" alt="newsweek-clone">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+                <img src="https://img.icons8.com/color/48/000000/css3.png" />
+
+                <p>
+                  <a class="ui black button intro-a" href="#">
+                    <i class="film icon"></i>
+                    View Demo
+                  </a>
+
+                  <a class="ui black button" href="#">
+                    <i class="code icon"></i> View Code
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="two column row">
+
+              <div class="column">
+                <h3>Edubox</h3>
+                <img src="/images/edubox.png">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+                <img src="https://img.icons8.com/color/48/000000/css3.png" />
+                <!-- <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png" /> -->
+                <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
+                <img src="https://img.icons8.com/color/48/000000/sass.png" />
+                <img src="https://img.icons8.com/color/48/000000/heroku.png" />
+                <img src="/images/rails.png" alt="rails" class="logos">
+
+                <p>
+                  <a class="ui black button intro-a" href="#">
+                    <i class="film icon"></i>
+                    View Demo
+                  </a>
+
+                  <a class="ui black button" href="#">
+                    <i class="code icon"></i> View Code
+                  </a>
+                </p>
+              </div>
+
+              <div class="column">
+                <h3>CSS Censor</h3>
+                <img src="/images/css-censor.png" alt="css-censor">
+
+                <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png" />
+                <img src="/images/rspec.png" alt="rspec" class="logos">
+
+                <p>
+                  <!-- <a class="ui black button intro-a" href="#">
+                    <i class="film icon"></i>
+                    View Demo
+                  </a> -->
+
+                  <a class="ui black button" href="#">
+                    <i class="code icon"></i> View Code
+                  </a>
+                </p>
+              </div>
+            </div>
+<!--
+            <div class="two column row">
+
+              <div class="column">
+                <h3>Clone of Twitter Web App</h3>
+                <img src="/images/newsweek-clone.png" alt="newsweek-clone">
+
+                <p>
+                  <a class="ui black button intro-a" href="#">
+                    <i class="film icon"></i>
+                    View Demo
+                  </a>
+
+                  <a class="ui black button" href="#">
+                    <i class="code icon"></i> View Code
+                  </a>
+                </p>
+              </div>
+
+              <div class="column">
+                <img src="/images/newsweek-clone.png" alt="newsweek-clone">
+                <img src="https://img.icons8.com/ultraviolet/40/000000/react.png" />
+
+                <p>
+                  <a class="ui black button intro-a" href="#">
+                    <i class="film icon"></i>
+                    View Demo
+                  </a>
+
+                  <a class="ui black button" href="#">
+                    <i class="code icon"></i> View Code
+                  </a>
+                </p>
+              </div>
+            </div> -->
+
+            <!-- End of Projects -->
 
 
-        <!-- Who Am I Template -->
-        <script id="about-template" type="text/x-handlebars-template">
-            <h1 class="ui header">Who Am I</h1>
-            <hr>
 
-            <div class="container">
 
-                <div class="row">
-                    <div class="ui items">
-                        <div class="item">
-                            <a class="ui small image">
-                                <img id="photo" src="/images/camanor.jpg">
-                            </a>
-                            <div class="content" id="content">
-                                <a class="header">Christopher Amanor</a>
-                                <div class="description">
-                                    <p>An innovative software developer offering four years of experience in engineering well-researched and cost-effective solutions.</p>
-                                    <p>Technical skill set includes:</p>
-                                    <ul>
-                                        <li>programming languages such as PHP, Ruby and Javascript.</li>
-                                        <li>frameworks such as Codeigniter, Laravel, Ruby on Rails, Nodejs, Bootstrap, JQuery and Semantic-UI.</li>
-                                        <li>distributed version control systems such as Git.</li>
-                                        <li>Linux (Ubuntu/CentOs) server administration.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+          </div>
+
+
+
+
+
+<!--
+          <div class="row">
+            <div class="intro">
+
+              <div class="actions">
+                <h1 class="header">Christopher Amanor</h1>
+                <h5>REMOTE FULL-STACK WEB DEVELOPER</h5>
+
+                <a class="ui black button intro-a" href="#">
+                  <i class="icon mobile alternate"></i>
+                  Hire Me
+                </a>
+
+                <a class="ui black button" href="#">
+                  <i class="icon clipboard"></i>
+                  Resume
+                </a>
+              </div>
+            <div class="ui items">
+              <div class="item">
+             <div class="ui small image">
+                  <img class="my-photo" src="/images/camanor2.png">
+                </div> -->
+
+<!--
+              </div>
+
+              <div class="intro">
+
+                <div class="actions">
+                  <h1 class="">Christopher Amanor</h1>
+                  <h5>REMOTE FULL-STACK WEB DEVELOPER</h5>
+
+                  <a class="ui black button" href="#">
+                    <i class="icon mobile alternate"></i>
+                    Hire Me
+                  </a>
+
+                  <a class="ui black button" href="#">
+                    <i class="icon clipboard"></i>
+                    Resume
+                  </a>
                 </div>
 
 
-            </div>
-        </script>
+              </div>
 
-        <!-- Projects Template -->
+
+              <div class="item"> -->
+
+                <!-- <a class="ui small image">
+                  <img id="photo" src="/images/camanor.jpg">
+                </a>
+
+                <a class="ui small image">
+                  Hire Me
+                </a>
+
+                <a class="ui small image">
+                  Resume
+                </a> -->
+<!--
+                <div class="content" id="content">
+                    <div class="description">
+                      <p>An innovative software developer offering four years of experience in engineering well-researched and cost-effective solutions.</p>
+                      <p>Technical skill set includes:</p>
+
+                      <ul>
+                        <li>programming languages such as PHP, Ruby and Javascript.</li>
+                        <li>frameworks such as Codeigniter, Laravel, Ruby on Rails, Nodejs, Bootstrap, JQuery and Semantic-UI.</li>
+                        <li>distributed version control systems such as Git.</li>
+                        <li>Linux (Ubuntu/CentOs) server administration.</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <h2>Work Experience</h2>
+
+              </div>
+
+               <div class="item">
+                 <button class="ui circular facebook icon button">
+                   <i class="facebook icon"></i>
+                 </button>
+                 <button class="ui circular twitter icon button">
+                   <i class="twitter icon"></i>
+                 </button>
+                 <button class="ui circular linkedin icon button">
+                   <i class="linkedin icon"></i>
+                 </button>
+                 <button class="ui circular google plus icon button">
+                   <i class="google plus icon"></i>
+                 </button>
+               </div>
+
+
+
+            </div>
+          </div>
+
+        </div>  -->
+
+    </script>
+
+
+    <!-- Projects Template -->
         <script id="projects-template" type="text/x-handlebars-template">
             <h1 class="ui header">Projects</h1>
             <hr>

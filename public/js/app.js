@@ -61,8 +61,8 @@ window.addEventListener('load', () => {
         router.navigateTo(path);
     });
 
-    $('#photo').transition('jiggle');
-    $('#content').transition('jiggle');
+    // $('#photo').transition('jiggle');
+    // $('#content').transition('jiggle');
 
 
 });

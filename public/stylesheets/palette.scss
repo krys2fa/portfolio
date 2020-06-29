@@ -31,7 +31,41 @@ $gradient-top-left: linear-gradient(225deg, #000000ff, #e5e5e5ff, #ffffffff);
 $gradient-bottom-left: linear-gradient(315deg, #000000ff, #e5e5e5ff, #ffffffff);
 $gradient-radial: radial-gradient(#000000ff, #e5e5e5ff, #ffffffff);
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 body {
+  background-color: $white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.my-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.actions {
+  margin: 2rem auto;
+
+  a {
+    margin: 1rem;
+  }
+}
+
+.header {
+  margin: 1rem;
+}
+
+h5 {
+  margin: 1.2rem;
+}
+
+.intro {
   background-color: $platinum;
+}
+
+.intro-a {
+  margin: 1rem;
 }
