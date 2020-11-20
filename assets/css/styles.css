@@ -344,3 +344,148 @@ img {
 	margin-right: 20px;
 }
 
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer-container {
+  row-gap: 2rem;
+}
+
+.footer-title {
+  font-size: var(--normal-font-size);
+	color: var(--white-color);
+	margin-bottom: var(--mb-2);
+}
+
+.footer-link {
+  padding: 0.25rem 0;
+}
+
+.footer-link:hover {
+  color: var(--first-color);
+}
+
+.footer-social {
+  font-size: 1.4rem;
+	margin-right: var(--mb-1);
+}
+
+.footer-social {
+  font-size: 1.4rem;
+	margin-right: var(--mb-1);
+}
+
+.footer-social:hover {
+  color: var(--first-color);
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+	  margin: 0;
+	}
+
+	.section {
+	  padding-top: 4rem;
+	}
+
+	.section-title {
+	  margin-bottom: 3rem;
+	}
+
+	.section-title::after {
+		width: 64px;
+		top: 3rem;
+	}
+
+	.nav {
+    height: calc(var(--header-height) + 1rem);
+	}
+
+	.nav-list {
+	  display: flex;
+	}
+
+	.nav-item {
+    margin-left: var(--mb-4);
+		margin-bottom: 0;
+	}
+
+	.nav-toggle {
+	  display: none;
+	}
+
+	.nav-link {
+	  color: var(--white-color);
+	}
+
+	.nav-link {
+    color: var(--white-color);
+	}
+
+	.nav-link:hover {
+	  color: var(--white-color);
+	}
+
+	.active::after {
+    background-color: var(--white-color);
+	}
+
+	.home-container {
+	  height: 100vh;
+		grid-template-columns: 1.7fr 1fr;
+		row-gap: 0;
+	}
+
+	.home-img {
+	  width: 524px;
+		right: 10%;
+	}
+
+	.about-container {
+	  grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		text-align: initial;
+		padding: 4rem 0;
+	}
+
+	.about-img {
+	  width: 200px;
+		height: 200px;
+	}
+
+	.about-img img {
+	  width: 165px;
+	}
+
+	.skills-container {
+	  grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+	}
+
+	.portfolio-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+
+	.publications-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+
+	.footer-container {
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+	   margin-left: auto;
+		 margin-right: auto;
+	}
+}
