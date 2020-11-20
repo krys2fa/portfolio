@@ -331,3 +331,16 @@ img {
 	margin-right: 20px;
 	cursor: pointer;
 }
+
+.action-buttons,
+.about-social-white {
+  color: var(--white-color);
+}
+
+.action-buttons {
+  border: 1px solid;
+	padding: 10px;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
