@@ -217,7 +217,6 @@ img {
   position: absolute;
 	right: 0;
 	bottom: 0;
-	/* width: 295px; */
 	width: 250px;
 }
 
@@ -439,8 +438,7 @@ img {
 	}
 
 	.home-img {
-	  width: 524px;
-		right: 10%;
+	  width: 200px;
 	}
 
 	.about-container {
@@ -451,8 +449,8 @@ img {
 	}
 
 	.about-img {
-	  width: 200px;
-		height: 200px;
+	  width: 170px;
+		height: 180px;
 	}
 
 	.about-img img {
@@ -479,6 +477,10 @@ img {
 	.footer-container {
 		grid-template-columns: repeat(3, 1fr);
 		justify-items: center;
+	}
+
+	.home-title {
+    margin-bottom: 20px;
 	}
 
 }
